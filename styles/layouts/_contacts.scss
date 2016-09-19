@@ -1,0 +1,120 @@
+.contact_box {
+  background-color: #F3F2F2;
+  position: relative;
+  text-align: center;
+  margin-bottom: 73px;
+  padding: 85px 0;
+  transition: background-color .3s;
+
+  .contact_list,
+  h4 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  h4 {
+    margin: 0 0 33px;
+  }
+
+  &:hover {
+
+    background-color: $main-green;
+
+    &:after {
+      color: #C7D434
+    }
+
+    .contact_list {
+      li,
+      a {
+        color: $black;
+      }
+    }
+  }
+}
+
+.contact_box_location,
+.contact_box_phone,
+.contact_box_fax,
+.contact_box_email {
+
+  &:after {
+    font-family: $icon-font;
+    font-size: 125px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #FCFCFC;
+    line-height: 250px;
+    transition: color .3s;
+  }
+}
+
+.contact_box_location {
+  
+  &:after {
+    content: "\f041";
+  }
+}
+
+.contact_box_phone {
+  
+  &:after {
+    content: "\f098";
+  }
+}
+
+.contact_box_fax {
+  
+  &:after {
+    content: "\f15c";
+  }
+}
+
+.contact_box_email {
+  
+  &:after {
+    content: "\f0e0";
+  }
+}
+
+.contact_list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+
+  li {
+    transition: color .3s;
+  }
+
+  a {
+    color: $main-gray;
+  }
+}
+
+.contact_map {
+  background-image: url(../images/map-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 410px;
+  margin-top: 52px;
+}
+
+.wpcf7-submit {
+  @extend .btn-green;
+  @extend .btn-lg;
+}
+
+@media (max-width: $screen-md) {
+  .contact_box {
+    margin-bottom: 30px;
+  }
+}

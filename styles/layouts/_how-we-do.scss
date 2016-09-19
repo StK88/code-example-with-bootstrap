@@ -1,0 +1,85 @@
+.goal_item {
+  text-align: center;
+  margin-bottom: 82px;
+
+  .fa {
+    font-size: 30px;
+    color: $white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $main-green;
+    margin-bottom: 15px;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  h5 {
+    margin-bottom: 12px;
+  }
+}
+
+.offer_wrap {
+  padding-top: 72px;
+}
+
+.offer_box {
+  position: relative;
+  overflow: hidden;
+  height: 264px;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 30px;
+  transition: all .3s;
+
+  h4 {
+    text-align: center;
+    padding: 110px 0 135px;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    background-color: #fcfcfc;
+
+    h4 {
+       padding: 38px 0 18px;
+    }
+
+    .offer_hidden {
+      opacity: 1;
+    }
+  }
+
+
+  @media (max-width: 1025px) {
+    
+    background-color: #fcfcfc;
+
+    h4 {
+       padding: 38px 0 18px;
+    }
+
+    .offer_hidden {
+      opacity: 1;
+    }
+  }
+}
+
+.offer_hidden {
+  padding: 0 20px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+
+@media (max-width: 1200px) {
+
+  .goal_item {
+    margin-bottom: 42px;
+  }
+}

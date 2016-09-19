@@ -1,0 +1,197 @@
+.comment-list {
+  list-style: none;
+  padding-left: 0;
+
+  ol {
+    list-style: none;
+  }
+}
+
+.comment-reply-link {
+  @extend .btn-black-outer;
+}
+
+.comment-reply-title {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.comment-body,
+.comment {
+
+  &.subcomment {
+    padding-left: 136px;
+  }
+
+  cite {
+    font-style: normal;
+  }
+
+  .children {
+    list-style: none;
+  }
+}
+
+
+.comment-body,
+.comment-respond {
+  width: 100%;
+
+  &.children {
+    padding-left: 136px;
+  }
+}
+
+.comment_content,
+.comment_image {
+  float: left;
+}
+
+.comment_content {
+  width: calc( 100% - 137px);
+
+  p {
+    word-break: break-all;
+  }
+
+
+  @media (max-width: $screen-sm-min) {
+    width: 100%;
+  }
+}
+
+.comment_head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.comment_head_info {
+  h6 {
+    margin: 0 0 5px;
+  }
+}
+
+.comment_image {
+  width: 95px;
+  height: 95px;
+  line-height: 95px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: #F7F7F7;
+  margin-right: 42px;
+
+  &:after {
+    content: "\f007";
+    font-family: $icon-font;
+    font-size: 40px;
+    color: #D9D8D8;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    display: none;
+  }
+}
+
+.commentlist {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-body,
+.children {
+  width: 100%;
+}
+
+.comment-body {
+  margin-bottom: 30px;
+  @include clearfix;
+
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 44px;
+  }
+}
+
+.comment_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 44px;
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
+
+  .comment-text {
+    flex: 1;
+  }
+
+  .meta {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    strong {
+      color: $black;
+      font-weight: 700;
+    }
+
+    time {
+      font-size: 10px;
+      color: $main-green;
+    }
+  }
+
+}
+
+.comment-form {
+  .comment-form-url,
+  .comment-form-author,
+  .comment-form-email {
+    @include make-lg-column(4);
+    margin-bottom: 0;
+  }
+
+  textarea {
+    margin-bottom: 36px;
+  }
+
+  .form-submit {
+    margin-bottom: 82px;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+.comment-form-comment {
+  clear: both;
+}
+
+
+.comments {
+  width: 100%;
+  clear: both;
+  padding: 0;
+
+  h4 {
+    margin-bottom: 38px;
+  }
+
+  ol ul {
+    @media (max-width: $screen-sm-min) {
+      padding-left: 0;
+    }
+  }
+}

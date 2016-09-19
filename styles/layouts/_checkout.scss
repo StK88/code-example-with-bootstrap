@@ -1,0 +1,39 @@
+.woocommerce-checkout-payment {
+
+  .box {
+    padding: 0;
+  }
+
+  label {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .payment_box {
+    margin-top: 15px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .payment_methods {
+    margin-bottom: 0;
+
+    li {
+      padding: 28px 34px 28px;
+      border-bottom: 1px solid $black;
+
+      &:last-child {
+        border-width: 0;
+      }
+    }
+  }
+
+  .input-radio {
+    margin-right: 12px;
+  }
+}

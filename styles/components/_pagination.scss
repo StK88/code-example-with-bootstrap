@@ -1,0 +1,38 @@
+.pagination {
+  list-style: none;
+  margin-bottom: 84px;
+  padding-left: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: $black;
+    margin: 0 5px;
+
+    a {
+      font-size: 14px;
+      color: $black;
+      transition: all .3s;
+
+      &:hover {
+        color: $main-green;
+      }
+    }
+
+    &.active {
+      a {
+        color: $main-green;
+      }
+    }
+  }
+}
+
+.nav_prev,
+.nav_next {
+  font-size: 16px;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}

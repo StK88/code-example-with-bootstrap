@@ -1,0 +1,129 @@
+.progress_wrap {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 82px;
+}
+
+.progress_box {
+  margin-bottom: 82px;
+}
+
+.vc_single_bar,
+.progress_item {
+  height: 38px;
+  line-height: 38px;
+  font-size: $font-size-small;
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: $main-lightgray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.progress_percentage,
+.progress_title {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+
+.vc_bar,
+.progress_percentage {
+  background-color: $main-green;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 1s linear 0s;
+}
+
+.vc_label_units {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.vc_label,
+.progress_title {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 0 15px;
+}
+
+
+.vc_progress_bar {
+  .vc_label {
+    font-size: $font-size-small;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .vc_single_bar .vc_bar.striped {
+    background-image: linear-gradient(
+      45deg, 
+      rgba(255, 255, 255, 0.15) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(255, 255, 255, 0.15) 50%, 
+      rgba(255, 255, 255, 0.15) 75%, 
+      transparent 75%, 
+      transparent
+    );
+    background-size: 40px 40px;
+  }
+  .vc_single_bar .vc_bar.animated {
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+      background-position: 40px 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  0% {
+      background-position: 40px 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .progress_box {
+    margin-bottom: 40px;
+  }
+
+  .progress_wrap {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  .progress_item {
+    text-align: left;
+  }
+  
+  .progress_title {
+    padding: 0;
+    top: -26px;
+  }
+}

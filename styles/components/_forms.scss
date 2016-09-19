@@ -1,0 +1,38 @@
+.woocommerce input[type="text"],
+.woocommerce input[type="password"],
+.woocommerce input[type="email"],
+.woocommerce input[type="number"],
+.form-control {
+  display: block;
+  width: 100%;
+  color: $black;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #F7F7F7;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  transition: all .3s;
+
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.woocommerce input[type="text"],
+.woocommerce input[type="password"],
+.woocommerce input[type="email"],
+.woocommerce input[type="number"],
+input.form-control {
+  height: 50px;
+}
+
+.woocommerce textarea,
+textarea.form-control {
+  width: 100%;
+  height: 185px;
+  padding-top: 14px;
+}
+
+.input-text {
+  @extend .form-control;
+}

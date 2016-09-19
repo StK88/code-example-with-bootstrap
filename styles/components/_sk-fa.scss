@@ -1,0 +1,41 @@
+.skfa-list {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+  }
+}
+
+.skfa-link {
+  opacity: 0.75;
+  transition: opacity .25s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+.skfa-facebook { color: #37589B; }
+.skfa-twitter { color: #46D4FE; }
+.skfa-google-plus { color: #DE5A49; }
+.skfa-pinterest { color: #CB2027; }
+.skfa-linkedin { color: #419CCA; }
+.skfa-tumblr { color: #345574; }
+.skfa-vk { color: #597BA5; }
+.skfa-stumbleupon { color: #ec4b24; }
+.skfa-delicious { color: #0B79E5; }
+.skfa-digg { color: #551A8B; }
+.skfa-reddit { color: #FF4500; }
+.skfa-xing { color: #026466; }
+.skfa-weibo { color: #E6162D; }
+.skfa-renren { color: #005EAC; }
+.skfa-envelope { color: #333333; }
+.skfa-bullseye { color: #DB3C14; }
+.skfa-code { color: #365D95; }

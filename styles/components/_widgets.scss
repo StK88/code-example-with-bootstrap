@@ -1,0 +1,176 @@
+.sidebar_primary {
+
+  .widget {
+
+    h3 {
+      margin-bottom: 22px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+.default-arrow-list,
+.widget_archive ul,
+.widget_categories ul,
+.widget_recent_entries ul,
+.widget_pages ul {
+
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+
+  li {
+    margin-bottom: 18px;
+  }
+
+  a {
+    color: $black;
+    font-weight: 700;
+    padding-left: 15px;
+    position: relative;
+
+    &:after {
+      content: "\f0da";
+      color: inherit;
+      font-family: $icon-font;
+      line-height: 15px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &:hover {
+      color: $main-green;
+    }
+  }
+
+  .children {
+    padding-left: 16px;
+    margin-top: 16px;
+
+    a:after {
+      color: $main-green;
+    }
+  }
+}
+
+
+
+.widget {
+
+  .post-date {
+    display: block;
+    color: $main-green;
+  }
+}
+
+.widget_meta {
+  li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 15px;
+    margin: 0 15px 12px 0;
+    border-right: 1px solid $main-green;
+    line-height: 12px;
+
+    a {
+      font-weight: 700;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-width: 0;
+    }
+  }
+}
+
+.widget_rss {
+
+  li {
+    margin-bottom: 32px;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+.widget_recent_comments {
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+
+.widget_archive ul li,
+.widget_calendar caption,
+.widget_rss ul a,
+.widget_recent_comments ul a {
+  font-size: $font-size-small;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.widget_rss ul a,
+.widget_recent_comments ul a {
+  display: block;
+  transition: color .3s;
+
+  &:hover {
+    color: $main-green;
+  }
+}
+
+.rssSummary {
+  line-height: 24px;
+}
+
+.rss-date,
+.recentcomments {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-green;
+}
+
+.widget_calendar {
+  #today {
+    background-color: $main-green;
+    color: black;
+  }
+
+  caption {
+    text-align: center;
+  }
+  table {
+    thead th {
+      font-size: 10px;
+      color: $main-green;
+      text-align: center;
+    }
+    tbody td {
+      text-align: center;
+      border-right: 1px solid #E6E6E6;
+      font-size: 13px;
+
+      &:last-child {
+        border-width: 0;
+      }
+    }
+
+    tbody tr {
+      border-top: 1px solid #E6E6E6;
+
+      &:first-child {
+        border-width: 0;
+      }
+    }
+  }
+}

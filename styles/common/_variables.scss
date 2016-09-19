@@ -1,0 +1,65 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    3;
+
+// Colors
+$brand-primary:         #27ae60;
+$black: #000;
+$white: #fff;
+$main-green: #cedb38;
+$main-lightgreen: #ddea49;
+$main-gray: #898e90;
+$main-darkgray: #848484;
+$main-lightgray: #F7F7F7;
+$main-red: #EF5353;
+
+$form-error: #F5E5E5;
+
+$icon-font: 'FontAwesome';
+$font-pinyon: 'Pinyon Script';
+
+
+// Bootstrap variables
+$font-family-base: 'Lato', sans-serif;
+$text-color: #898e90;
+
+//btn-lg
+$font-size-large: 16px;
+$padding-large-vertical: 11px;
+$padding-large-horizontal: 38px;
+$border-radius-large: 22px;
+
+$container-large-desktop: 1170px;
+
+//Links
+$link-color: $main-green;
+$link-hover-color: $main-lightgreen;
+$link-hover-decoration: none;
+
+$font-size-base: 14px;
+$font-size-small: 12px;
+
+$blockquote-font-size: $font-size-small;
+
+$headings-color: #000;
+$headings-font-weight: 700;
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+$font-size-h3: 30px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 12px;
+
+
+$border-radius-base: 15px;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
